@@ -1,38 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Fork Me! FCC: Test Suite Template</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
 
-  <body>
-    
-    <h1 id="title">freeCodeCamp</h1>
-    <P id="description">Thank you for taking the time to help us improve the platform</P>
+    <body>
+        <h1 id="title">freeCodeCamp</h1>
+        <p id="description">
+            Thank you for taking the time to help us improve the platform
+        </p>
 
-    <form id="survey-form">
-      <label id="name-label">Name</label><br>
-      <input type="text" id="name" placeholder="Enter Your Name"><br>
-      <label id="name-email">Email</label><br><br>
-      <input type="email" id="email" placeholder="Enter Your Name"><br>
-      <label id="name-number">Age</label><br>
-      <input type="number" id="number" placeholder="Age"><br>
-      <label for="">Which option best describe your current role?</label><br>
-    
-      <select name="select option" id="drop-down">
-        <option value="Student">Student</option>
-        <option value="Full Time job">Full Time job</option>
-        <option value="Full timer learner">Full timer learner</option>
-        <option value="Prefer not to say">Prefer not to say</option>
-        <option value="others">others</option>
+        <form id="survey-form">
+            <label id="name-label">Name</label><br />
+            <input
+                class="stretched"
+                type="text"
+                id="name"
+                placeholder="Enter Your Name"
+                required
+            /><br />
+            <label id="email-label">Email</label><br />
 
-      </select>
+            <input
+                class="stretched"
+                type="email"
+                id="email"
+                required
+                placeholder="Enter Your Name"
+            /><br />
+            <label id="number-label">Age</label><br />
+            <input
+                class="stretched"
+                type="number"
+                id="number"
+                placeholder="Age"
+                min="13"
+                max="200"
+            /><br />
+            <label for="">Which option best describe your current role?</label
+            ><br />
 
-    </form>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    
-    <!--
+            <select name="select option" id="dropdown" class="stretched">
+                <option value="Student">Student</option>
+                <option value="Full Time job">Full Time job</option>
+                <option value="Full timer learner">Full timer learner</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+                <option value="others">others</option>
+            </select>
+
+            <div id="radio-buttons">
+                <p>Would you recommend us?</p>
+                <input
+                    type="radio"
+                    name="recommend"
+                    value="yes"
+                    id="radio-btn"
+                />
+                <label for="radio-btn">Yes</label>
+                <input
+                    type="radio"
+                    name="recommend"
+                    value="no"
+                    id="radio-btn"
+                />
+                <label for="radio-btn">No</label>
+            </div>
+
+            <div id="checkboxes">
+                <p>What would you like to see improved?</p>
+                <input
+                    type="checkbox"
+                    value="frontend"
+                    name="improvements"
+                    id="checkbox"
+                />
+                <label for="checkbox">Frontend</label>
+                <input
+                    type="checkbox"
+                    value="database"
+                    idname="improvements"
+                    id="checkbox"
+                />
+                <label for="checkbox">Database</label>
+                <input
+                    type="checkbox"
+                    value="backend"
+                    name="improvements"
+                    id="checkbox"
+                />
+                <label for="checkbox">Backend</label>
+            </div>
+
+            <textarea
+                name="comments"
+                id="texarea"
+                cols="30"
+                rows="10"
+            ></textarea>
+            <br />
+            <button type="submit" id="submit">Submit</button>
+        </form>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+        <!--
 
     Hello Camper!
 
@@ -44,6 +116,6 @@
     - The freeCodeCamp Team
 
     -->
-    <script  src="js/index.js"></script>
-  </body>
+        <script src="js/index.js"></script>
+    </body>
 </html>
